@@ -1,13 +1,568 @@
-@import "reset.css";
-/*引入css文件的一种方式*/
+@import 'reset.css'
+
+body
+	font-size 16Px
+
+html, body, .full-page, .index-page, .dali-page, .dailihoutai-page
+	width 100%
+	height 100%
+
+.header
+	background rgba(#000, 0.45)
+	line-height 52px
+
+	.swiper-slide
+		width auto
+
+		.tips
+			padding-left 30px
+			color #ffffff
+			font-size 24px
+
+.footer
+	display flex
+	height 94px
+	background #3b0703
+
+	.item
+		display block
+		flex 1
+		text-align center
+		transition 0.3s
+
+		&:hover, &.active
+			background #fff2c5
+
+			.title
+				color #3b0703
+
+		.title
+			color #fff2c5
+			font-size 24px
+			line-height 1
+
+		.icon
+			display block
+			height 60px
+			background url('../img/4fdbecb52ee77c3907b71e3a7b88d5eb-48+38.png') center center / 48px auto no-repeat
+
+	.item-1
+		.icon
+			background-image url('../img/4fdbecb52ee77c3907b71e3a7b88d5eb-48+38.png')
+
+		&:hover, &.active
+			.icon
+				background-image url('../img/fb46e07ef23be7acffd093d0d8592fe8-48+38.png')
+
+	.item-2
+		.icon
+			background-image url('../img/8edda1eb7fd548dc5e6bf97e5e95195f-48+36.png')
+
+		&:hover, &.active
+			.icon
+				background-image url('../img/828efb367587c500e898a64f54c63355-48+36.png')
+
+	.item-3
+		.icon
+			background-image url('../img/7f7abf34c77dc7f7860b026d5dac7e21-48+40.png')
+
+		&:hover, &.active
+			.icon
+				background-image url('../img/ca39aea64ad822a98f38d50d33fc8901-48+40.png')
+
+	.item-4
+		.icon
+			background-image url('../img/88d3ec4e7c96c904c33e00d6972ee42d-48+38.png')
+
+		&:hover, &.active
+			.icon
+				background-image url('../img/009f9b823535a18682c41c184e358257-48+38.png')
+
+.index-page
+	background url('../img/4671853ea4fe548dd7a2cdfb917fbdaf-750+1334.jpg') center center / 100% auto no-repeat
+
+	.header
+		position fixed
+		top 0
+		right 0
+		left 0
+
+	.footer
+		position fixed
+		right 0
+		bottom 0
+		left 0
+
+	// .footer
+	.main
+		.btn-group
+			display flex
+			justify-content space-between
+			padding-top 105px
+			padding-left 20px
+
+			.id
+				width 210px
+				height 80px
+				border-radius 40px
+				background rgba(#fff, 0.6)
+				color #000000
+				text-align center
+				font-size 28px
+				line-height 80px
+
+			.report
+				display block
+				width 115px
+				height 80px
+				border-radius 40px 0 0 40px
+				background #ffffff
+				box-shadow 0 0 30px rgba(#110104, 0.4)
+				color #000066
+				text-align center
+				font-size 30px
+				line-height 80px
+
+		.red-money
+			margin 80px auto 0
+			width 595px
+			border-radius 17px
+			background #fff2c5
+			text-align center
+
+			h3
+				color #a1220a
+				font-size 38px
+				line-height 80px
+
+			p
+				padding 0 30px
+				color #a1220a
+				font-size 24px
+				line-height 1.5
+
+		.list
+			display flex
+			flex-wrap wrap
+			width 100%
+
+			.item
+				flex 50%
+				box-sizing border-box
+				padding-top 135px
+				width 50%
+				height 263px
+				background url('../img/559af8dbfda0444c1d284dc6ba711660-277+263.png') center center / 277px auto no-repeat
+
+				.cost
+					color #ffffff
+					text-align center
+					font-size 38px
+					line-height 1
+
+					small
+						color #ffffff
+						font-size 24px
+
+				p
+					color #ffff00
+					text-align center
+					font-size 22px
+					line-height 1
+
+.dailixiaji-page
+	.header, .footer
+		position relative
+
+	.header
+		background #3b0703
+
+	.header
+		h2
+			color #ffffff
+			text-align center
+			font-size 28px
+			line-height 80px
+
+	.main
+		overflow-y scroll
+		padding 0 30px
+		height calc(100vh - 80px - 94px)
+
+		&::-webkit-scrollbar
+			display none
+
+		.team-info
+			margin 30px 0 45px
+			height 66px
+			border 1px solid #e8e8e8
+			background #eeeeee
+			color #000000
+			text-indent 30px
+			font-size 28px
+			line-height 66px
+
+		.list
+			padding-bottom 30px
+
+			.child
+				margin-bottom 22px
+				border 1px solid #ccc
+				border-radius 10px
+				background #eeeeee
+
+				.title
+					display flex
+					justify-content space-between
+					align-items center
+					height 100px
+					color #000000
+					font-size 28px
+
+					&.active
+						.icon
+							transform rotate(90deg)
+
+					.h100
+						display flex
+						align-items center
+						height 100%
+
+					.icon
+						width 100px
+						height 100%
+						background url('../img/16fe427909f583121f2ea658375f17e2-40+40.png') center center / 40px no-repeat
+						transition 0.3s
+
+					.value
+						margin-right 30px
+						width 100px
+						height 55px
+						border-radius 5px
+						background #487cac
+						color #ffffff
+						text-align center
+						font-size 28px
+						line-height 55px
+
+			.content
+				display none
+				padding 0 30px 10px 100px
+				color #000000
+				font-size 24px
+				line-height 2
+
+				p
+					display flex
+					justify-content space-between
+
+.dali-page
+	.header
+		position fixed
+		top 0
+		right 0
+		left 0
+
+	.footer
+		position fixed
+		right 0
+		bottom 0
+		left 0
+
+	.main
+		height 100%
+		background #170103
+
+		.banner
+			img
+				display block
+				width 100%
+
+		.form
+			padding 45px 125px 45px
+
+			input, button
+				display block
+
+			input
+				box-sizing border-box
+				padding 0 30px
+				width 100%
+				height 85px
+				outline none
+				border none
+				background #ffffff
+				font-size 30px
+
+				&::placeholder
+					color #ccc
+
+			button
+				margin-top 40px
+				width 100%
+				height 85px
+				outline none
+				border none
+				background #ffcc01
+				color #170103
+				text-align center
+				line-height 85px
+
+		.tips
+			padding 0 36px
+
+			h3, p
+				color #cccccc
+				line-height 2
+
+			h3
+				font-size 34px
+
+			p
+				font-size 22px
+
+.dailihoutai-page
+	.header, .footer
+		position relative
+
+	.header
+		background #3b0703
+
+	.header
+		h2
+			color #ffffff
+			text-align center
+			font-size 28px
+			line-height 80px
+
+	.main
+		overflow-y scroll
+		height calc(100vh - 80px - 94px)
+
+		&::-webkit-scrollbar
+			display none
+
+		.user-info
+			display flex
+			justify-content flex-start
+			align-items center
+			padding 0 36px
+			height 210px
+			background linear-gradient(170deg, #ffce7a, #ffe58e)
+
+			.pic
+				border 5px solid #3b0703
+				border-radius 5px
+
+				img
+					display block
+					width 114px
+
+			.content
+				padding-left 35px
+
+				p
+					color #3b0703
+					font-size 24px
+					line-height 44px
+
+		.content-bg
+			box-sizing border-box
+			padding 60px
+			height calc(100vh - 80px - 94px - 210px)
+			background url('../img/84ee39946279fe2f33824e7240e34060-750+955.png') center top / 100% auto no-repeat
+
+			.btn-group
+				margin-left -3.33%
+
+				.item
+					float left
+					box-sizing border-box
+					margin-bottom 30px
+					margin-left 3.33%
+					width 30%
+					height 158px
+					border 1px solid #e78939
+					border-radius 5px
+					background linear-gradient(to bottom, #ffce7a, #ffe68e)
+					color #000000
+					text-align center
+					font-size 28px
+					line-height 1
+
+					.ico
+						height 100px
+						background url('../img/98b11b1bf5c00be12381a005aef8ec7d-64+64.png') center center / 64px auto no-repeat
+
+				.item-1
+					.ico
+						background-image url('../img/98b11b1bf5c00be12381a005aef8ec7d-64+64.png')
+						background-size 64px auto
+
+				.item-2
+					.ico
+						background-image url('../img/ae78dd9d919ca959f803c30e7428007a-55+65.png')
+						background-size 55px auto
+
+				.item-3
+					.ico
+						background-image url('../img/4ca3596e59b06d9b956a3f9839a8e79a-91+64.png')
+						background-size 91px auto
+
+				.item-4
+					.ico
+						background-image url('../img/405956f9d2aa4b7b0fa6f22ae9ee1ca1-68+67.png')
+						background-size 68px auto
+
+				.item-5
+					.ico
+						background-image url('../img/1bb326930f2d0e30733116eb09d008cf-66+66.png')
+						background-size 66px auto
+
+.xipai-page
+	height 100%
+	background url('../img/06ff7b34513e88b94a22332c95dea197-750+1334.jpg') center center / 100% auto no-repeat
+
+	.header
+		position fixed
+		top 0
+		right 0
+		left 0
+
+	.footer
+		position fixed
+		right 0
+		bottom 0
+		left 0
+
+	.main
+		height 100%
+
+		.title
+			padding 140px 0 40px
+
+			img
+				display block
+				margin 0 auto
+				width 331px
+
+		.list
+			position relative
+			margin 0 auto
+			width 714px
+			height 720px
+			border-radius 5px
+			background #fff2c5
+
+			&.active
+				.item
+					transform translate(-50%, -50%)
+
+					.top
+						opacity 0
+			&.start-select
+				.item
+					overflow hidden
+					.top
+						opacity 0
+			.item
+				position absolute
+				top 50%
+				left 50%
+				width 110px
+				height 139px
+				transition 0.5s
+				transform translate(-50%, -50%)
+				&:after
+					content ''
+					position absolute
+					bottom 0
+					left 0
+					width 110px
+					top 0
+					background url('../img/ab442be06deb9593077bf003b21a846d-110+145.png') left bottom/110px auto no-repeat
+					opacity 0
+				&.active
+					&:after
+						opacity 1
+					.top
+						img
+							opacity 0
+
+				.bottom
+					img
+						display block
+						width 100%
+
+				.top
+					position absolute
+					bottom 0
+					left 0
+					text-align center
+					opacity 1
+					transition 0.3s
+
+					img
+						width 119px
+
+					.text
+						position absolute
+						bottom 20px
+						left 0
+						width 110px
+						color #ffffff
+						font-weight bold
+						font-size 30px
+						z-index 1
+
+						small
+							font-size 20px
+
+			for i in 0 .. 5
+				.item-{1 + 5 * i}
+					transform translate(-50% - 200% - 50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+				.item-{2 + 5 * i}
+					transform translate(-50% - 100% - 25%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+				.item-{3 + 5 * i}
+					transform translate(-50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+				.item-{4 + 5 * i}
+					transform translate(-50% + 100% + 25%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+				.item-{5 + 5 * i}
+					transform translate(-50% + 200% + 50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+		.try
+			padding-top 86px
+			display none
+			&.active
+				display block
+			a
+				display block
+				margin 0 auto
+				width 385px
+				img
+					width 100%
 /*
-
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
-background:rgba(255,255,255,.8);
+// ddd
+*/
 
 
- filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
- body{
- 	font-size: 16Px;
- }
+/*
+					// &.active
+						// transform translate(-50% - 200% - 50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+					// &.active
+						// transform translate(-50% - 100% - 25%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+					// &.active
+						// transform translate(-50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+					// &.active
+						// transform translate(-50% + 100% + 25%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+
+					// &.active
+						// transform translate(-50% + 200% + 50%, -50% - 50% - 12.5% - 100% - 25% + 125% * i)
+*/
