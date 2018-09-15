@@ -10,6 +10,18 @@ html, body, .full-page, .index-page, .dali-page, .dailihoutai-page
 .header
 	background rgba(#000, 0.45)
 	line-height 52px
+	.control
+		position absolute
+		top 0
+		bottom 0
+	.left
+		left 30px
+	.back
+		width 50px
+		display block
+		height 100%
+		background url('../img/04498e01e71390f44c5bcafd2b26206d-19+36.png') center center /19px auto no-repeat
+
 
 	.swiper-slide
 		width auto
@@ -537,6 +549,8 @@ html, body, .full-page, .index-page, .dali-page, .dailihoutai-page
 		.try
 			padding-top 86px
 			display none
+			position relative
+			z-index 10
 			&.active
 				display block
 			a
@@ -545,6 +559,39 @@ html, body, .full-page, .index-page, .dali-page, .dailihoutai-page
 				width 385px
 				img
 					width 100%
+		.try-money
+			position fixed
+			top 0
+			bottom 0
+			left 0
+			right 0
+			background rgba(#000,0.7)
+			z-index 10
+			transform scale(0)
+			transform-origin center center
+			transition 0.3s
+			&.active
+				transform scale(1)
+				@media (min-width 750px)
+					transform scale(1) translate(-50%,0)
+			img
+				position absolute
+				top 343px
+				left 178px
+				width 443px
+			.value
+				position absolute
+				top 343px
+				left 178px
+				font-size 80px
+				color #000
+				line-height 1
+				width 400px
+				text-align center
+				padding-top 150px
+
+
+
 /*
 // ddd
 */

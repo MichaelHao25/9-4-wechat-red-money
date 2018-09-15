@@ -1,0 +1,120 @@
+
+
+.bg{
+	background: #efefef;
+	height: 100%;
+}
+
+.container{
+	overflow-y: scroll;
+	padding: 0 0.3rem;
+	height: calc(100vh - 0.8rem - 0.94rem);
+}
+.container::-webkit-scrollbar {
+	display: none;
+  }
+.withdraw{
+	font-size: .36rem;
+	background: #fff2c5;
+	text-align: center;
+	line-height: 1.5rem;
+
+}
+.withdraw b{
+	color: #f60;
+	font-size: .6rem;
+}	
+
+.tx-box{
+	width: 5rem;
+	margin: 0 auto;
+}
+.tx-box form{
+	width: 100%;
+	height: 100%;
+}
+.tx-box form input{
+	width: 100%;
+	height: .84rem;
+	line-height: .84rem;
+	margin-top: 1rem;
+	display: block;
+	font-size: .3rem;
+	outline: none;
+}
+.tx-box form input[type="tel"]{
+	border: 1px solid #999999;
+	padding-left: .2rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.tx-box form input[type="button"]{
+	background: #ffcc01;
+	border: none;
+}
+.tx-box form p{
+	font-size: .3rem;
+	line-height: 1.9;
+	color: #666;
+	text-align: center;
+	margin-top: 5px;
+}
+.pup-box{
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	display: none;
+
+}
+.pup-box .box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 5.9rem;
+	min-height: 5rem;
+	background: #fff;
+	padding: 20px 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pup-box .box form{
+	width: 100%;
+	height: 100%;
+}
+.pup-box .box form strong{
+	text-align: center;
+	font-size: .48rem;
+	line-height: 1.4;
+	display: block;
+	margin-bottom: 30px;
+}
+.pup-box .box form p{
+	font-size: .3rem;
+	text-align: justify;
+	line-height: 1.7;
+	margin-bottom: 25px;
+}
+.pup-box .box form input{
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	font-size: .3rem;
+	display: block;
+	background: none;
+}
+.pup-box .box form input[type="text"]{
+	border: 1px solid #999999;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.pup-box .box form input[type="submit"]{
+	background: #ffcc01;
+	border: none;
+}
